@@ -15,10 +15,6 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-@app.route("/")
-def hello
-
-
 @app.route("/v1/remove-background", methods=['POST'])
 def remove_background():
     file = request.files['file']
